@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "PetHub POS",
+    "slug": "pethub-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "pethub-mobile",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "bundleIdentifier": "com.pethub.shop",
+      "buildNumber": "22",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Pet Hub Shop uses your camera to photograph order dispatch confirmations and proof-of-delivery documentation that branch staff attach to warehouse orders.",
+        "NSPhotoLibraryUsageDescription": "Pet Hub Shop accesses your photo library so branch staff can attach existing dispatch confirmations and proof-of-delivery photos to warehouse orders.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.pethub.shop",
+      "versionCode": 4,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Pet Hub Shop accesses your photo library so branch staff can attach existing dispatch confirmations and proof-of-delivery photos to warehouse orders.",
+          "cameraPermission": "Pet Hub Shop uses your camera to photograph order dispatch confirmations and proof-of-delivery documentation that branch staff attach to warehouse orders."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5abd7802-1f3e-4ee5-8af6-431187bda77d"
+      }
+    },
+    "owner": "pethubdev"
+  }
+}
